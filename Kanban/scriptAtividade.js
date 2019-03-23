@@ -1,20 +1,20 @@
 function getFase(num)
 {
-	if(num == 1){ return "Concepção"; }
-	else if(num == 2){ return "Elaboração"; }
-	else if(num == 3){ return "Contrução"; }
-	else { return "Integração"; }
+	if(num == 1){ return "ConcepÃ§Ã£o"; }
+	else if(num == 2){ return "ElaboraÃ§Ã£o"; }
+	else if(num == 3){ return "ContruÃ§Ã£o"; }
+	else { return "IntegraÃ§Ã£o"; }
 }
 
 function getDisciplina(num)
 {
-	if(num == 1){ return "Modelagem de Negócio"; }
+	if(num == 1){ return "Modelagem de NegÃ³cio"; }
 	else if(num == 2){ return "Requisitos"; }
-	else if(num == 3){ return "Análise e Design"; }
-	else if(num == 4){ return "Implementação"; }
+	else if(num == 3){ return "AnÃ¡lise e Design"; }
+	else if(num == 4){ return "ImplementaÃ§Ã£o"; }
 	else if(num == 5){ return "Teste"; }
-	else if(num == 6){ return "Implantação"; }
-	else if(num == 7){ return "Gerenciamento de Configuração e Mudança"; }
+	else if(num == 6){ return "ImplantaÃ§Ã£o"; }
+	else if(num == 7){ return "Gerenciamento de ConfiguraÃ§Ã£o e MudanÃ§a"; }
 	else if(num == 8){ return "Gerenciamento de Projeto"; }
 	else { return "Ambiente"; }
 }
@@ -34,5 +34,5 @@ var atv = new atividadeObj(1, 1, 1, "tester", "docum", "saidinha");
 atividades.push(atv);
 
 function listarAtividades(){
-	
+
 }
