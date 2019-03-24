@@ -343,3 +343,36 @@ function showDetail(imagem, texto){
 	modalImg.src = imagem;
 	captionText.innerHTML = texto;
 }
+
+var roles = [];
+
+function getRoles(){
+	for(var item of atividades){
+		if(!roles.includes(item.papel)){
+			roles.push(item.papel);
+		}
+	}
+}
+
+function detailRoles(){
+	var string = "";
+	var cont = 0;
+	string = string + '<table><tr>'
+	for(var role of roles) {
+		string = string + '<td width="33%" style="vertical-align:top;">' +
+											'<span style="font-size: 20px; font-weight:bold; margin-bottom:10px;">'+role+'</span>' +
+											'<ul>';
+		var atvs = atividades.filter(e => e.papel === role);
+		for(var item of atvs){
+			string = string + '<li>' + item.texto + '</li>';
+		}
+		string = string + '</ul></td>';
+		cont++;
+		if(cont%3 == 0){
+			string = string + '</tr><tr>'
+		}
+	}
+	string = string + '</tr></table>'
+	var x = document.getElementById("roleContent");
+	x.innerHTML = string;
+}

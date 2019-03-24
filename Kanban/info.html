@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="scriptAtividade.js"></script>
+  </head>
+  <body onload="listarAtividades();">
+  	<header style="z-index: 100; padding: 20px;">
+      <button type="button" onclick="location.href='index.html'" class="headerButton">Kanban</button>
+      <button type="button" onclick="location.href='roles.html'" class="headerButton">Roles</button>
+      <button type="button" onclick="location.href='info.html'" class="headerButton">Information</button>
+      <button type="button" onclick="location.href='custos.html'" class="headerButton">Costs</button>
+  	</header>
+    <div class="contentSection">
+      <div style="margin-bottom:100px; width: 100%;">
+        <div class="subtitulo">Premissas</div>
+        <div class="textocorrido">
+          <p>A empresa tem um histórico de vida e trabalha com desenvolvimento de software têm anos, já implementou RUP e agora com a proposta de desenvolvimento novo software, vai adaptar seus processos para se adequar e garantir a qualidade do produto em todas as suas fases. Devido a esse histórico, alguns pontos relacionados aos procedimentos para gestão de riscos, mudanças, e padrões de desenvolvimento, já são pré-estabelecidos.</p>
+        </div>
+        <div class="subtitulo">Fases e Iterações</div>
+        <div class="textocorrido">
+            <p>São 4 fases: concepção, elaboração, construção e transição, pertencentes ao Rational Unified Process e antes de iniciar o processo é preciso ressaltar o objetivo de cada uma delas, sendo eles: </p>
+            <p>Concepção - Abrange as tarefas de comunicação com o cliente e planejamento. É feito um plano de projeto avaliando os possíveis riscos, as estimativas de custo e prazos, estabelecendo as prioridades, levantamento dos requisitos do sistema e preliminarmente analisá-lo. Assim, haverá um assentimento dos stakeholders na definição do escopo do projeto, onde são examinados os objetivos para se decidir sobre a continuidade do desenvolvimento. </p>
+            <p>Elaboração - Abrange a modelagem genérica do processo. O objetivo desta fase é analisar de forma mais detalhada o domínio do problema, revisando os riscos que o projeto pode sofrer e construindo sua arquitetura. </p>
+            <p>Construção - Desenvolve os componentes de software. O principal objetivo desta fase é a construção do sistema de software, com foco no desenvolvimento de componentes e outros recursos do sistema. É na fase de construção que cerca de 80% de codificação ocorre. </p>
+            <p>Transição - Engloba a entrega do software ao usuário e a fase de testes. O objetivo desta fase é disponibilizar o sistema, tornando-o disponível e compreendido pelo cliente. As atividades desta fase incluem o treinamento dos usuários finais e também a realização de testes da versão beta do sistema visando garantir que o mesmo possua o nível adequado de qualidade.</p>
+        </div>
+        <div class="subtitulo">Práticas do XP</div>
+        <div class="textocorrido">
+          <p>São muitas as práticas do Extreme Programming, algumas delas já são utilizadas no RUP, como “versões pequenas” que se trata dos entregáveis ou releases, “jogo do planejamento” que atualiza e revisa o plano em todas as iterações, mantendo o controle do projeto, “teste” em que muitos quesitos são respeitados como teste em cada fase, testes unitários e teste de aceitação com a única exceção do TDD (Test-Driven Design), “integração contínua”, “cliente presente”.</p>
+          <p>Então analisando as que já são implementadas, foi decidido englobar as que não são, dessa forma temos:</p>
+          <p>Prática do projeto simples - o projeto deve ser organizado e flexível para que mudanças sejam realizadas de forma barata, simples e rápida. Portanto ele não pode ter duplicação de funcionalidade, deve passar nos testes e ter o menor número possível de classes e métodos.</p>
+          <p>Prática de padrão de codificação – todos tem acesso ao código e todos o refatoram. Isso implica em definir um padrão de codificação logo no início do projeto. Trazendo não somente um entendedor e responsável por parte de algoritmo.</p>
+          <p>Metáfora – é uma linguagem verbal que todos os internos são familiarizados, então ao invés de descrever detalhe a detalhe como uma arquitetura funciona, por exemplo, apenas ao comunicar o seu nome todos os integrantes compreendem do que se trata.</p>
+        </div>
+        <div class="subtitulo">Manifesto Ágil</div>
+        <div class="textocorrido">
+          <p>A junção entre os métodos acaba se cruzando em muitos pontos como mostrado anteriormente, o manifesto ágil se baseia em valores que são claros, mas põe em prioridade outros quesitos, indivíduos e interações mais que processos e ferramentas, software em funcionamento mais que documentação abrangente, colaboração com o cliente mais que negociação de contratos e responder a mudanças mais que seguir um plano. </p>
+          <p>Indivíduos e interações evidencia que o desenvolvimento é primordialmente desenvolvido por humanos, então deve-se resolver os problemas crônicos de comunicação. Enquanto processos e ferramentas são importantes, mas também simples e úteis.</p>
+          <p>Software em funcionamento coloca em cheque que o objetivo central é ter um produto que seja funcional. A documentação é necessária, porém somente quando agrega valor, e não quando o é.</p>
+          <p>Colaboração com o cliente foca no fato em que o cliente e a empresa devem ter comunicação clara e amigável, gerando interação e a possibilidade de tomada de decisão em conjunto e trabalho em equipe. </p>
+          <p>Responder a mudanças engloba que é necessário saber receber feedbacks e atualizar o plano no caso de alterações, aprendendo com erros e adaptando processos.</p>
+          <p><b>Fere o manifesto?</b></p>
+          <p>O manifesto ágil possui os seus 12 princípios que são muito parecidos com a junção dos objetivos do RUP e também do XP, esse último tem o mesmo criador do Manifesto Ágil, o Kent Beck, entre outros membros. </p>
+        </div>
+        <div class="subtitulo">RUP x Práticas do XP</div>
+        <div class="textocorrido">
+          <p>Tanto a metodologia do RUP quanto do XP tem seu funcionamento baseado em iterações e são orientadas ao cliente. O RUP segue as 4 fases do ciclo de desenvolvimento: concepção, elaboração, construção e transição. Enquanto isso, o aspecto de tempo no método XP está diretamente relacionado com o código produzido; porém, são os clientes que delimitam o tempo do projeto a partir do grau de satisfação com as iterações recebidas.</p>
+          <p>Em relação aos artefatos produzidos durante o processo do software, podemos dizer que o RUP é completamente baseado em artefatos entregáveis ao cliente. Já o XP é baseado em comunicação direta e oral entre a equipe e o cliente, o que restringe seu uso em projetos com grande distribuição geográfica.</p>
+          <p>A metodologia do RUP define uma série de atividades que são realizadas por papéis específicos que, se utilizam de artefatos de entrada para gerar artefatos de saída. Esses papéis definem o comportamento e as responsabilidades de cada indivíduo no projeto e se agrupam nas 9 disciplinas do RUP, podendo ter até 30 papéis especificados no total.</p>
+          <p>A metodologia XP, por sua vez, apresenta apenas quatro atividades básicas: produção de código, testes, listening (escutar o cliente) e design. O XP define sete papéis “genéricos” para o processo: programador, cliente, testador, tracker, técnico, consultor e “Big Boss”.</p>
+          <p>Comparando as definições das atividades e dos papéis, concluímos que o RUP faz uma divisão de tarefas de forma específica, enquanto a divisão proposta pelo XP tem um caráter de “uso-geral”, sem atribuições específicas dentro das atividades.</p>
+          <p>Em relação a tratativa do código, dizemos que o RUP trata o código em subsistemas que serão integrados e, para cada subsistema existe uma equipe responsável pelo mesmo. Em contraposição, o XP trata o código como coletivo, ou seja, qualquer programador tem permissão para editar o código.</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      N2 - 1º Bimestre. --> Beatriz Toreta (081160002) && Bruno Castellani (081160009) && Isabelle Puertas (081160014)
+    </footer>
+  </body>
+</html>

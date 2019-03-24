@@ -12,10 +12,13 @@
   </head>
   <body onload="listarAtividades();">
   	<header style="z-index: 100;">
-  		<div style="margin: 20px;"> N2 - 1º Bimestre. --> Beatriz Toreta (081160002) && Bruno Castellani (081160009) && Isabelle Puertas (081160014) </div>
+      <button type="button" onclick="location.href='index.html'" class="headerButton">Kanban</button>
+      <button type="button" onclick="location.href='roles.html'" class="headerButton">Roles</button>
+      <button type="button" onclick="location.href='info.html'" class="headerButton">Information</button>
+      <button type="button" onclick="location.href='custos.html'" class="headerButton">Costs</button>
   	</header>
-  	<section>
-  		<div style="text-align: center; font-size:30px; font-weight:bolder; margin-bottom: 15px;"> KANBAN - Modelagem do RUP </div>
+  	<section style="overflow-x:hidden;">
+  		<div style="text-align: center; font-size:30px; font-weight:bolder; margin-bottom: 15px;"> KANBAN - RUP Modeling </div>
   		<div class="container-fluid" style="max-height: 500px;">
   			<div id="sortableKanbanBoards" class="row" style="max-height: 500px; min-width: 800; max-width: 100%; display: flex; justify-content: center;">
   				<div class="panel panel-primary kanban-col" style="max-height: 500px !important;">
@@ -90,5 +93,8 @@
         <div id="caption"></div>
       </div>
   	</section>
+    <footer>
+      N2 - 1º Bimestre. --> Beatriz Toreta (081160002) && Bruno Castellani (081160009) && Isabelle Puertas (081160014)
+    </footer>
   </body>
 </html>

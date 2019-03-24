@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="scriptAtividade.js"></script>
+  </head>
+  <body onload="listarAtividades();">
+  	<header style="z-index: 100; padding: 20px;">
+      <button type="button" onclick="location.href='index.html'" class="headerButton">Kanban</button>
+      <button type="button" onclick="location.href='roles.html'" class="headerButton">Roles</button>
+      <button type="button" onclick="location.href='info.html'" class="headerButton">Information</button>
+      <button type="button" onclick="location.href='custos.html'" class="headerButton">Costs</button>
+  	</header>
+    <div class="contentSection">
+      <div style="margin-bottom:100px; width: 100%;">
+        <div class="subtitulo">Custo Benefício</div>
+        <div class="textocorrido">
+          <p>O Custo Benefício do nosso projeto de RUP é uma característica que, para ser definida, é preciso primeiro analisar as vantagens e desvantagens.</p>
+          <p>Por ser um processo de software robusto e bem definido, o RUP tem como base os princípios de desenvolvimento iterativo e incremental. Com isso, temos as seguintes vantagens:</p>
+          <p>- Os riscos são identificados mais cedo;</p>
+          <p>- As mudanças e atualizações são tratadas de forma séria evitando a perda de qualidade do software;</p>
+          <p>- A arquitetura baseada em componentes é modular e bem mais refinada;</p>
+          <p>- É possível reutilizar componentes de outros projetos, padronizando processos, estilos e modelos;</p>
+          <p>- As atividades são distribuídas ao longo do ciclo de vida do RUP.</p>
+          <p>Contudo, para projetos muito complexos e trabalhosos, como projetos específicos de pequeno porte, o custo do investimento em ferramentas de suporte é muito elevado, o que aumenta o custo de mudanças e atualizações.</p>
+          <p>Com essa análise de vantagens e desvantagens, podemos dizer que o Custo Benefício do nosso projeto é alto, pois mesmo para projetos muito específicos, jamais deixamos a qualidade do software e a satisfação do cliente em segundo lugar.</p>
+          <p>Comparando os custos e benefícios de nossa empresa com uma concorrente, chegamos a conclusão que nossa empresa tem o maior custo benefício para o seu projeto.</p>
+          <div style="text-align: center; display: flex; justify-content:center;">
+            <table border="1">
+              <col width="150px;">
+              <col width="150px;">
+              <col width="150px;">
+              <tr>
+                <td></td><td>Nossa Empresa</td><td>Empresa Concorrente</td>
+              </tr>
+              <tr>
+                <td>Custo</td><td>R$ 270.000,00</td><td>R$ 397.000,00</td>
+              </tr>
+              <tr>
+                <td>Benefício</td><td>R$ 350.000,00</td><td>R$ 480.000,00</td>
+              </tr>
+              <tr>
+                <td>Benefício/Custo</td><td>1,3</td><td>1,2</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="subtitulo">Ponto de Equilíbrio (BreakEven) </div>
+        <div class="textocorrido">
+          <p>O ponto de equilíbrio é o valor exato no balanço financeiro de uma empresa onde o montante da receita cobre os custos fixos e variáveis. Para calcularmos ponto de equilíbrio (break even point), precisamos ter em mão o valor exato da receita que precisa ser atingida para cobrir o total de custos da produção e comercialização dos nossos produtos e serviços. Dessa forma, podemos concluir que no ponto de equilíbrio os lucros são nulos; todavia, quando o valor da receita supera esse ponto, nossa empresa obtém lucro e, caso a receita seja inferior ao ponto de equilíbrio, teremos prejuízo.</p>
+          <p>Para determinarmos o valor do break even point, levamos em consideração os seguintes fatores:</p>
+          <p>- Custos variáveis – são os gastos para produzir um produto ou para executar um serviço. Quanto mais produtos ou serviços a empresa oferecer, maiores serão os custos variáveis.</p>
+          <p>- Custos fixos – são os gastos que são permanentes e não dependem do volume de vendas ou da produção, como aluguel e folha de pagamento dos funcionários.</p>
+          <p>- Vendas – a soma total da venda dos produtos e serviços.</p>
+          <p>- Margem de contribuição – corresponde ao custo para fabricar uma unidade ou para executar um serviço. Este valor é determinado pela subtração dos custos variáveis pelo montante de venda.</p>
+          <p>Balanço da nossa Empresa para o projeto X</p>
+          <p>(RT) Receita total: R$ 350.000,00</p>
+          <p>(CV) Custo variável: R$ 120.000,00</p>
+          <p>(CF) Custo fixo: R$ 150.000,00</p>
+          <p>(MC) Margem de contribuição: (RT – CV) = R$ 230.000,00</p>
+          <p>(IMC) Índice da margem de contribuição: (MC ÷ RT) = 0,66</p>
+          <p>(PE) Ponto de equilíbrio: (CF ÷ IMC) = R$ 228.260,87</p>
+          <p>Conclusão: R$ 228.260,87 é o valor que a Empresa precisa atingir para cobrir todas as despesas do projeto X, tudo que exceder este limite será lucro.</p>
+        </div>
+        <div class="subtitulo">Payback </div>
+        <div class="textocorrido">
+          <p>Payback é a palavra em inglês que significa “retorno”. Trata-se de um indicador usado nas empresas para calcular o período de retorno do investimento inicial em um projeto até o momento em que os rendimentos acumulados tornam-se iguais ao valor desse investimento. O payback nos apresenta uma estimativa de quanto tempo levará para recuperarmos a aplicação inicial. O período pode ser curto ou longo dependendo do valor do investimento e do tipo do negócio.</p>
+          <p>O payback da nossa empresa para o projeto X foi calculado e vamos apresentá-lo abaixo:</p>
+          <p>PB (payback) = investimento inicial / resultado médio do fluxo de caixa</p>
+          <p>PB = R$ 300.000,00 / R$ 135.000,00/trimestre</p>
+          <p>PB = 2,22 trimestres.</p>
+          <p>Payback real da empresa:</p>
+          <div style="text-align: center; display: flex; justify-content:center;">
+            <table border="1">
+              <col width="150px;">
+              <col width="150px;">
+              <col width="150px;">
+              <col width="150px;">
+              <col width="150px;">
+              <tr>
+                <td></td><td>Investimento Inicial</td><td>Após 3 meses</td><td>Após 6 meses</td><td>Após 9 meses</td>
+              </tr>
+              <tr>
+                <td></td><td>R$ 300.000,00</td><td> </td><td> </td><td> </td>
+              </tr>
+              <tr>
+                <td>Lucro Anual</td><td></td><td>R$ 75.000,00</td><td>R$ 170.000,00</td><td>R$ 230.000,00</td>
+              </tr>
+              <tr>
+                <td>Restante</td><td></td><td>R$ 255.000,00</td><td>R$ 85.000,00</td><td>R$ 0,00</td>
+              </tr>
+              <tr>
+                <td>Lucro Real</td><td></td><td>R$ 0,00</td><td>0,00</td><td>R$ 145.000,00</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      N2 - 1º Bimestre. --> Beatriz Toreta (081160002) && Bruno Castellani (081160009) && Isabelle Puertas (081160014)
+    </footer>
+  </body>
+</html>

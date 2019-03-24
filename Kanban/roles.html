@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="scriptAtividade.js"></script>
+  </head>
+  <body onload="listarAtividades();">
+  	<header style="z-index: 100; padding: 20px;">
+      <button type="button" onclick="location.href='index.html'" class="headerButton">Kanban</button>
+      <button type="button" onclick="location.href='roles.html'" class="headerButton">Roles</button>
+      <button type="button" onclick="location.href='info.html'" class="headerButton">Information</button>
+      <button type="button" onclick="location.href='custos.html'" class="headerButton">Costs</button>
+  	</header>
+    <div class="contentSection">
+      <div style="text-align: center; font-size:30px; font-weight:bolder; margin-bottom: 15px;"> ROLES - RUP Modeling </div>
+      <div id="roleContent">
+        <script>
+          getRoles();
+          detailRoles();
+        </script>
+      </div>
+    </div>
+    <footer>
+      N2 - 1º Bimestre. --> Beatriz Toreta (081160002) && Bruno Castellani (081160009) && Isabelle Puertas (081160014)
+    </footer>
+  </body>
+</html>
