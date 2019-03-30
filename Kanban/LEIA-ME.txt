@@ -1,0 +1,10 @@
+Olá caro leitor!
+
+Para melhor experiência de utilização, siga os seguintes passos:
+
+	1. Baixe e extraia o arquivo .zip;
+	1. Abra o arquivo index.html, contido nesta raiz da pasta, com o Firefox ou o Chrome;
+	2. Navegue pelas páginas para ter uma visão ampla sobre a modelagem de RUP definida;
+	3. Na aba "About/Download" há links para os documentos e vídeo.
+	
+	

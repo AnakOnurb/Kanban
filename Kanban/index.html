@@ -1,100 +1,135 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- A biblioteca bundle já contem os arquivos JS do Bootstrap, Popper, e jQuery.
+    <script src="js/bootstrap.bundle.js"></script>-->
+    <title>Kanban </title>
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
 	<script type="text/javascript" src="scriptAtividade.js"></script>
+    <style>
+    </style>
+    <script>
+    </script>
   </head>
-  <body onload="listarAtividades();">
-  	<header style="z-index: 100;">
-      <button type="button" onclick="location.href='index.html'" class="headerButton">Kanban</button>
-      <button type="button" onclick="location.href='roles.html'" class="headerButton">Roles</button>
-      <button type="button" onclick="location.href='info.html'" class="headerButton">Information</button>
-      <button type="button" onclick="location.href='custos.html'" class="headerButton">Costs</button>
-  	</header>
-  	<section style="overflow-x:hidden;">
-  		<div style="text-align: center; font-size:30px; font-weight:bolder; margin-bottom: 15px;"> KANBAN - RUP Modeling </div>
-  		<div class="container-fluid" style="max-height: 500px;">
-  			<div id="sortableKanbanBoards" class="row" style="max-height: 500px; min-width: 800; max-width: 100%; display: flex; justify-content: center;">
-  				<div class="panel panel-primary kanban-col" style="max-height: 500px !important;">
-  					<div class="panel-heading">
-  						INCEPTION
-  						<i class="fa fa-2x fa-plus-circle pull-right"></i>
-  					</div>
-  					<div class="panel-body" style="max-height: 500px !important;">
-  						<div id="CONCEPCAO" class="kanban-centered">
-  						</div>
-  					</div>
-  					<div class="panel-footer">
-  						<a href="#">Add a card...</a>
-  					</div>
-  				</div>
-  				<div class="panel panel-primary kanban-col" style="max-height: 500px !important;">
-  					<div class="panel-heading">
-  						ELABORATION
-  						<i class="fa fa-2x fa-plus-circle pull-right"></i>
-  					</div>
-  					<div class="panel-body"  style="max-height: 500px !important;">
-  						<div id="ELABORACAO" class="kanban-centered">
-  						</div>
-  					</div>
-  					<div class="panel-footer">
-  						<a href="#">Add a card...</a>
-  					</div>
-  				</div>
-  				<div class="panel panel-primary kanban-col" style="max-height: 500px !important;">
-  					<div class="panel-heading">
-  						CONSTRUCTION
-  						<i class="fa fa-2x fa-plus-circle pull-right"></i>
-  					</div>
-  					<div class="panel-body"  style="max-height: 500px !important;">
-  						<div id="CONSTRUCAO" class="kanban-centered">
-  						</div>
-  					</div>
-  					<div class="panel-footer">
-  						<a href="#">Add a card...</a>
-  					</div>
-  				</div>
-  				<div class="panel panel-primary kanban-col" style="max-height: 500px !important;">
-  					<div class="panel-heading">
-  						TRANSITION
-  						<i class="fa fa-2x fa-plus-circle pull-right"></i>
-  					</div>
-  					<div class="panel-body"  style="max-height: 500px !important;">
-  						<div id="TRANSICAO" class="kanban-centered">
-  						</div>
-  					</div>
-  					<div class="panel-footer">
-  						<a href="#">Add a card...</a>
-  					</div>
-  				</div>
-  			</div>
-  		</div>
-  		<div class="modal modal-static fade" id="processing-modal" role="dialog" aria-hidden="true">
-          <div class="modal-dialog">
-              <div class="modal-content">
-                  <div class="modal-body">
-                      <div class="text-center">
-                          <i class="fa fa-refresh fa-5x fa-spin"></i>
-                          <h4>Processing...</h4>
-                      </div>
-                  </div>
-              </div>
-          </div>
+  <body lang="pt-br" onload="listarAtividades();">
+    <!-- Navegador superior -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">
+        <!-- <img id="headImage"  width="50px" height="50px" alt=""/> -->
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Kanban<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="roles.html">Roles</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="info.html">Information</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="custos.html">Costs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About/Download</a>
+          </li>
+        </ul>
       </div>
-      <div id="myModal" class="modal" style="z-index: 200;">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01" style="height: 100%; margin-top: -40px;">
-        <div id="caption"></div>
-      </div>
-  	</section>
-    <footer>
-      N2 - 1º Bimestre. --> Beatriz Toreta (081160002) && Bruno Castellani (081160009) && Isabelle Puertas (081160014)
-    </footer>
+    </nav>
+    <!-- Conteúdo da página -->
+    <div class="mainDiv">
+      <section style="overflow-x:hidden;">
+    		<div style="text-align: center; font-size:30px; font-weight:bolder; margin-bottom: 15px;"> KANBAN - RUP Modeling </div>
+    		<div class="container-fluid" style="max-height: 500px;">
+    			<div id="sortableKanbanBoards" class="row" style="max-height: 500px; min-width: 800; max-width: 100%; display: flex; justify-content: center;">
+    				<div class="panel panel-primary kanban-col" style="max-height: 500px !important;">
+    					<div class="panel-heading">
+    						INCEPTION
+    						<i class="fa fa-2x fa-plus-circle pull-right"></i>
+    					</div>
+    					<div class="panel-body" style="max-height: 500px !important;">
+    						<div id="CONCEPCAO" class="kanban-centered">
+    						</div>
+    					</div>
+    					<div class="panel-footer">
+    						<a href="#">Add a card...</a>
+    					</div>
+    				</div>
+    				<div class="panel panel-primary kanban-col" style="max-height: 500px !important;">
+    					<div class="panel-heading">
+    						ELABORATION
+    						<i class="fa fa-2x fa-plus-circle pull-right"></i>
+    					</div>
+    					<div class="panel-body"  style="max-height: 500px !important;">
+    						<div id="ELABORACAO" class="kanban-centered">
+    						</div>
+    					</div>
+    					<div class="panel-footer">
+    						<a href="#">Add a card...</a>
+    					</div>
+    				</div>
+    				<div class="panel panel-primary kanban-col" style="max-height: 500px !important;">
+    					<div class="panel-heading">
+    						CONSTRUCTION
+    						<i class="fa fa-2x fa-plus-circle pull-right"></i>
+    					</div>
+    					<div class="panel-body"  style="max-height: 500px !important;">
+    						<div id="CONSTRUCAO" class="kanban-centered">
+    						</div>
+    					</div>
+    					<div class="panel-footer">
+    						<a href="#">Add a card...</a>
+    					</div>
+    				</div>
+    				<div class="panel panel-primary kanban-col" style="max-height: 500px !important;">
+    					<div class="panel-heading">
+    						TRANSITION
+    						<i class="fa fa-2x fa-plus-circle pull-right"></i>
+    					</div>
+    					<div class="panel-body"  style="max-height: 500px !important;">
+    						<div id="TRANSICAO" class="kanban-centered">
+    						</div>
+    					</div>
+    					<div class="panel-footer">
+    						<a href="#">Add a card...</a>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="modal modal-static fade" id="processing-modal" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="text-center">
+                            <i class="fa fa-refresh fa-5x fa-spin"></i>
+                            <h4>Processing...</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="myModal" class="modal" style="z-index: 200;">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01" style="height: 100%; margin-top: -40px;">
+          <div id="caption"></div>
+        </div>
+    	</section>
+      <footer>
+        N2 - 1º Bimestre. -- Beatriz Toreta (081160002) && Bruno Castellani (081160009) && Isabelle Puertas (081160014)
+      </footer>
+    </div>
   </body>
+  <!-- carga de scripts do Bootstrap, JQuery, Popper -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </html>
